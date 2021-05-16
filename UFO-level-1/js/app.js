@@ -20,23 +20,23 @@ var form = d3.select('#form')
 
 button.on('click', runEnter);
 form.on('click', runEnter);
-//button.on('click', handleClick);
-//form.on('click', handleClick);
+//button.on('click', command);
+//form.on('X', command);
 
 
 function runEnter() {
     d3.event.preventDefault();
 
-//    var userInput = d3.select("#datetime");
-//    var inputValue = userInput.property("value");
+//    var input = d3.select("#date");
+//    var inputValue = input.property("value");
     var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
 
-//    console.log(inputValue);
+//    console.log(input);
 //    console.log(UFOviews);
 
     var userFilter = tableData.filter(a => a.datetime === inputValue)
-//    var filterData = tableData.filter(a => a.datetime === inputValue);
+//  
     //console.log(filterData);
 
 
